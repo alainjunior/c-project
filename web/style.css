@@ -3,14 +3,11 @@ body{
 	margin:0px;
 	height:100%;
 }
-.head{
+.header{
 	height:120px;
 	background-color:#FEDD42;
-}
-
-.header{
-	margin:0 14% 0px 15%;
-	height:120px;
+	margin: 0 auto;
+	width:100%;
 }
 p2{
 	font-family: Arial; 
@@ -106,11 +103,8 @@ a:hover {
 	width: 100%;
 	height: 320px;
 	background-color: white;
-	background-size:780px 330px;	
-}
-.cals{
-	margin:0 13% 0px 17%;
-	float: left;
+	background-size:780px 330px;
+	background-repeat: no-repeat;	
 }
 
 .inf{
