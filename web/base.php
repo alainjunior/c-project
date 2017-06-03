@@ -31,14 +31,15 @@
 					<span class="caret"></span>
 					</a>
 					<ul class="dropdown-menu">
-					<li><a href="#">Программные продукты</a></li>
-					<li><a href="#">Сервисы</a></li>
-					<li><a href="#">Сопровождение</a></li>
+					<li><a href="/program_prod.php">Программные продукты</a></li>
+					<li><a href="/servis.php">Сервисы</a></li>
+					<li><a href="/its.php">Сопровождение</a></li>
 				</ul>
 			</li>
-			<li><a href="#">Отзывы</a></li>
-			<li><a href="#">Контакты</a></li>
-			<li><a href="#">Частые вопросы</a></li>
+			<li><a href="/otziv.php">Отзывы</a></li>
+			<li><a href="/contacts.php">Контакты</a></li>
+			<li><a href="/faq.php">Частые вопросы</a></li>
+			<li><a href="/konsult.php">Онлайн-консультация</a></li>
           </ul>
         </div>
       </div>
