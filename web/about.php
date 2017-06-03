@@ -1,3 +1,7 @@
+<?php
+	include 'base.php';
+?>
+
 <html>
 <head>
 <title>ООО «ПРОКС»</title>
@@ -20,33 +24,7 @@
 
 <body>
 	<div class="head">
-		<div class="header">
-			<a href="index.html"><img src="images/logo.jpg" width="210" height="120" alt="I"></a>
-			<div class="me">
-				<p2>ПРОКС</p2><p3> / БАРНАУЛ<p3>
-				<div class="kons">
-				<td><p style="text-align: center"><a href="konsult.html"><button class="konsult">Онлайн консультация</button></a></p></td>
-				</div>
-				<br>
-				<hr size="0.2" width="740">
-				<ul id="menu">
-				<li><a href="compani.html">О нас</a></li>
-				<li>
-					<a href="*">Наши услуги</a>
-						<ul>
-							<li><a href="program_prod.html">Программные продукты</a></li>
-							<li><a href="servis.html">Сервисы</a></li>
-							<li><a href="its.html">Сопровождение</a></li>
-							
-						</ul>
-				</li>
-				<li><a href="otziv.html">Отзывы</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
-				<li><a href="faq.html">Частые вопросы</a></li>
-				</ul>
-				
-			</div>
-		</div>
+
 			<img src="images/gran.png" width="100%" height="20" alt="I"></img>
 	
 	<div class="cals">
