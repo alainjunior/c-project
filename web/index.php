@@ -6,7 +6,7 @@
 <head>
 <title>ООО «ПРОКС»</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
-	<link rel="stylesheet" href="style.css" media="screen">
+	<link rel="stylesheet" href="custom.css" media="screen">
 	<link rel="stylesheet" href="bootstrap.min.css" media="screen">
 	
 <script>
@@ -53,11 +53,16 @@ window.onload = function() {
 </head>
 
 <body>
-	<div class="header">
 
+
+<div class="header">
 			<img src="images/gran.png" width="100%" height="20" alt="I"></img>
 	<div class="jumbotron">
 		<div class="container">
+			<?php
+				include 'db_connect.php';
+				include '2gis.php';
+			?>
 			<!-- replace with carousel
 			<div class="dinamikponel">
 				<div id="scr"></div>
