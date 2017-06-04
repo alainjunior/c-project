@@ -21,7 +21,11 @@
           </button>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-			<a href="/"><img src="images/logo.jpg" width="95" height="50" alt="I"></a>
+			
+			<ul class="nav navbar-nav navbar-left">
+				<li><a href="/" style="padding:0px"><img src="images/logo.jpg" width="95" height="50" alt="I"></a></li>
+				<li><a href="/">ПРОКС / Барнаул</a></li>
+			</ul>
 
           <ul class="nav navbar-nav navbar-right">
 			<li class="dropdown">
@@ -52,11 +56,6 @@
         </div>
       </div>
     </nav>
-	
-	<footer class="footer">
-	<div class="container">
-	<p class="text-muted">Place sticky footer content here.</p>
-	</div>
 </footer>
 
 

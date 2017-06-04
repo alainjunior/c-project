@@ -10,52 +10,11 @@
 	<link rel="stylesheet" href="custom.css" media="screen">
 	<link rel="stylesheet" href="bootstrap.min.css" media="screen">
 	
-<script>
-	jsHover = function() {
-	var hEls = document.getElementById("menu").getElementsByTagName("li");
-	for (var i=0, len=hEls.length; i<len; i++) {
-	hEls[i].onmouseover=function() { this.className+=" jshover"; }
-	hEls[i].onmouseout=function() { this.className=this.className.replace(" jshover", ""); }
-	}
-	}
-	if (window.attachEvent && navigator.userAgent.indexOf("Opera")==-1) window.attachEvent("onload", jsHover);
-</script>
-
-<script>
-var slider = {
-	slides:['3.png','7.png','8.png'],
-	frame:0,
-	set: function(image) { 
-		document.getElementById("scr").style.backgroundImage = "url("+image+")";
-	},
-	init: function() { 
-		this.set(this.slides[this.frame]);
-	},
-	left: function() { 
-		this.frame--;
-		if(this.frame < 0) this.frame = this.slides.length-1;
-		this.set(this.slides[this.frame]);
-	},
-	right: function() { 
-		this.frame++;
-		if(this.frame == this.slides.length) this.frame = 0;
-		this.set(this.slides[this.frame]);		
-	}
-};
-window.onload = function() { 
-	slider.init();
-	setInterval(function() { 
-		slider.right();
-	},5000);
-};
-</script>
-
-	
 </head>
 
 <body>
 
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:50px">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
 		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
