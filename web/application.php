@@ -21,19 +21,28 @@
 </head>
 
 <body>
-	<div class="col-sm-offset-0 col-sm-12 col-md-offset-0 col-md-12 col-lg-offset-1 col-lg-10" style="margin-top: 50px">
+	<div class="col-sm-offset-0 col-sm-12 col-md-offset-0 col-md-12 col-lg-offset-1 col-lg-10" style="margin-top: 50px;">
 		<div class="col-sm-12 col-md-6 col-lg-6">
-			<div class="panel panel-default">
+			<div class="panel panel-default" style="min-height: 375px;">
 				<div class="panel-body ">
-				<!-- добавить стили для вопросов -->
-				<!-- вопросы берутся с БД?? -->
-					
 					<form class="form-horizontal" method="post">
 						<fieldset>
-							<legend class="text-center" style="font-size:24px">Пожалуйста, заполните форму <br /> Специалист свяжется с Вами в ближайшее время</legend>
+							<?php if($_GET['type'] == 1): ?>
+								<legend class="text-center" style="font-size:24px">Оставить заявку на консультацию по приобретению программного продукта</legend>
+							<?php elseif($_GET['type'] == 2): ?>
+								<legend class="text-center" style="font-size:24px">Оставить заявку на консультацию по сервисам</legend>
+							<?php elseif($_GET['type'] == 3): ?>
+								<legend class="text-center" style="font-size:24px">Подключить тариф "Сопровождение"</legend>
+							<?php endif ?>
 							<div class="form-group">
 								<div class="col-md-10 col-md-offset-1">
 									<input id="fname" name="name" type="text" placeholder="Фамилия, имя, отчество" class="form-control" required="required">
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1">
+									<input id="city" name="city" type="text" placeholder="Город" class="form-control" required="required">
 								</div>
 							</div>
 							
@@ -48,10 +57,11 @@
 									<input id="email" name="email" type="text" placeholder="Контактный e-mail" class="form-control" required="required">
 								</div>
 							</div>
+							
 
 							<div class="form-group">
 								<div class="col-md-12 text-center">
-									<button type="submit" class="btn btn-primary btn-lg">Отправить сообщение</button>
+									<button type="submit" class="btn btn-primary btn-lg">Отправить</button>
 								</div>
 							</div>
 						</fieldset>
@@ -61,15 +71,19 @@
 			</div>
 		</div>
 		<div class="col-sm-12 col-md-6 col-lg-6" style="text-align: center;">
-			<div class="panel panel-default">
+			<div class="panel panel-default" style="min-height: 375px;">
 				<div class="panel-body ">
-					<img src="images/its2.png" width="590" height="297" alt="I"></img>
-					</div>
-					</div>
+					<?php if($_GET['type'] == 1): ?>
+						<img src="images/prod1.png" width="590" height="297" alt="I"></img>
+					<?php else: ?>
+						<img src="images/its2.png" width="590" height="297" alt="I"></img>
+					<?php endif ?>
+				</div>
+			</div>
 		</div>
 
 	</div>
-
+	
 	<!--
 	<div class="footer">
 		<div class="foot">

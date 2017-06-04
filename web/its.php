@@ -135,7 +135,7 @@
 					<p>Мы поможем вам выбрать оптимальный тариф для вас, за минимальную плату.</p>
 					<hr size="0.01" width="100%">
 					<div class="col-md-12 text-center">
-						<a href="zayavka_servis.html"><button class="btn btn-primary btn-lg" style="float:center">Оставить заявку</button></a>
+						<a href="application.php?type=3"><button class="btn btn-primary btn-lg" style="float:center">Оставить заявку</button></a>
 					</div>
 				</div>
 			</div>

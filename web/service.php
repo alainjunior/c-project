@@ -64,7 +64,7 @@
 						</tr>
 					</table>
 					<div class="col-md-12 text-center">
-						<a href="zayavka_servis.html"><button class="btn btn-primary btn-lg" style="float:center">Подключить</button></a>
+						<a href="application.php?type=2"><button class="btn btn-primary btn-lg" style="float:center">Подключить</button></a>
 					</div>
 					
 				</div>

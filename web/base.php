@@ -32,7 +32,7 @@
 				<ul class="dropdown-menu">
 					<li><a href="/about.php">О компании</a></li>
 					<li><a href="/contacts.php">Контакты</a></li>
-					<li><a href="/otziv.php">Отзывы</a></li>
+					<li><a href="/review.php">Отзывы</a></li>
 				</ul>
 			</li>
 			<li class="dropdown">
@@ -42,12 +42,12 @@
 				</a>
 				<ul class="dropdown-menu">
 					<li><a href="/program_prod.php">Программные продукты</a></li>
-					<li><a href="/servis.php">Сервисы</a></li>
+					<li><a href="/service.php">Сервисы</a></li>
 					<li><a href="/its.php">Сопровождение</a></li>
 				</ul>
 			</li>
 			<li><a href="/faq.php">Частые вопросы</a></li>
-			<li><a href="/konsult.php" style="color: green">Онлайн-консультация</a></li>
+			<li><a href="/consult.php" style="color: green">Онлайн-консультация</a></li>
           </ul>
         </div>
       </div>
