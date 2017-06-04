@@ -12,3 +12,8 @@
 	height:50px;
 	margin-top: 7px;
 }
+
+
+.carousel-inner > .item > img {
+  height:280px !important;
+}
