@@ -1,3 +1,7 @@
+<?php
+	include 'base.php';
+?>
+
 <html>
 <head>
 <title>ООО «ПРОКС»</title>
@@ -17,60 +21,56 @@
 </head>
 
 <body>
-	<div class="head">
-		<div class="header">
-			<a href="index.html"><img src="images/logo.jpg" width="210" height="120" alt="I"></a>
-			<div class="me">
-				<p2>ПРОКС</p2><p3> / БАРНАУЛ<p3>
-				<div class="kons">
-				<td><p style="text-align: center"><a href="konsult.html"><button class="konsult">Онлайн консультация</button></a></p></td>
-				</div>
-				<br>
-				<hr size="0.2" width="740">
-				<ul id="menu">
-				<li><a href="compani.html">О нас</a></li>
-				<li>
-					<a href="*">Наши услуги</a>
-						<ul>
-							<li><a href="program_prod.html">Программные продукты</a></li>
-							<li><a href="servis.html">Сервисы</a></li>
-							<li><a href="its.html">Сопровождение</a></li>
+	<div class="col-sm-offset-0 col-sm-12 col-md-offset-0 col-md-12 col-lg-offset-1 col-lg-10" style="margin-top: 50px">
+		<div class="col-sm-12 col-md-6 col-lg-6">
+			<div class="panel panel-default">
+				<div class="panel-body ">
+				<!-- добавить стили для вопросов -->
+				<!-- вопросы берутся с БД?? -->
+					
+					<form class="form-horizontal" method="post">
+						<fieldset>
+							<legend class="text-center" style="font-size:24px">Пожалуйста, заполните форму <br /> Специалист свяжется с Вами в ближайшее время</legend>
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1">
+									<input id="fname" name="name" type="text" placeholder="Фамилия, имя, отчество" class="form-control" required="required">
+								</div>
+							</div>
 							
-						</ul>
-				</li>
-				<li><a href="otziv.html">Отзывы</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
-				<li><a href="faq.html">Частые вопросы</a></li>
-				</ul>
-				
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1">
+									<input id="phone" name="phone" type="text" placeholder="Контактный телефон" class="form-control" required="required">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-10 col-md-offset-1">
+									<input id="email" name="email" type="text" placeholder="Контактный e-mail" class="form-control" required="required">
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="col-md-12 text-center">
+									<button type="submit" class="btn btn-primary btn-lg">Отправить сообщение</button>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+
+				</div>
 			</div>
 		</div>
-			<img src="images/gran.png" width="100%" height="20" alt="I"></img>
-	
-	<div class="cals_zayavka">
-		<div class="z">
-		<center><h2>Пожалуйста заполните форму.<br>
-		Специалист свяжется с Вами в ближайшее время.</h2></center>
-		
-		<p4>ФИО</p4><p8>*</p8><br>
-		<input type="text2" size="500"><br><br>
-		<p4>Телефон</p4><p8>*</p8><br>
-		<input type="text2" size="500"><br><br>
-		<p4>E-mail</p4><p8>*</p8><br>
-		<input type="text2" size="500"><br><br>
-		<td><p style="text-align: center"><button class="ne"><p4>Отправить</p4></button></td>
-		
+		<div class="col-sm-12 col-md-6 col-lg-6" style="text-align: center;">
+			<div class="panel panel-default">
+				<div class="panel-body ">
+					<img src="images/its2.png" width="590" height="297" alt="I"></img>
+					</div>
+					</div>
 		</div>
-		<div class="im">
-		<br><br><br>
-			<img src="images/its2.png" width="492" height="254" alt="I"></img>
-			
-			
-		</div>
-		
-		
+
 	</div>
-	
+
+	<!--
 	<div class="footer">
 		<div class="foot">
 			© ООО «ПРОКС»<br>
@@ -79,7 +79,7 @@
 			+7 (3852) 229-444. 
 		</div>
 	</div>
-
+	-->
 
 </body>
 </html>
