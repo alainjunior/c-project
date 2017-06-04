@@ -29,7 +29,7 @@
 				<!-- добавить стили для вопросов -->
 				<!-- вопросы берутся с БД?? -->
 					
-					<form class="form-horizontal" method="post">
+					<form class="form-horizontal" id="myForm" method="post">
 						<fieldset>
 							<legend class="text-center" style="font-size:24px">Пожалуйста, заполните форму <br /> Специалист свяжется с Вами в ближайшее время</legend>
 							<div class="form-group">
@@ -71,13 +71,24 @@
 
 	</div>
 	
-	<?php
-		if(isset($_POST['send']))
-		{
-			$sql = "INSERT INTO requests (fio, phone, email, request_type) VALUES ('".$_POST["name"]."','".$_POST["phone"]."','".$_POST["email"]."', '0')";
-			mysqli_query($link, $sql);
-		}
-	?>
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Информация</h4>
+				</div>
+				<div class="modal-body text-center">
+					<p>Заявка успешно отправлена.<br /> Специалист свяжется с Вами в ближайшее время</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
 
 	<!--
 	<div class="footer">
@@ -89,6 +100,27 @@
 		</div>
 	</div>
 	-->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#myForm').on('submit', function(e) {
+				e.preventDefault();
+				$.ajax({
+					type:'POST',
+					url:'ajax.php',
+					data:{
+						'name':$("#fname").val(),
+						'phone':$("#phone").val(),
+						'email':$("#email").val(),
+					},
+					response:'text',
+					success:function (data) {
+						$('#myModal').modal('show');
+						$("#myForm").trigger('reset');
+					}
+				});
+			});
+		});
+	</script>
 
 </body>
 </html>
