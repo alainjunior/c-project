@@ -1,5 +1,6 @@
 <?php
 	include 'base.php';
+	include 'db_connect.php';
 ?>
 
 <html>
@@ -51,7 +52,7 @@
 
 							<div class="form-group">
 								<div class="col-md-12 text-center">
-									<button type="submit" class="btn btn-primary btn-lg">Отправить</button>
+									<button type="submit" name="send" class="btn btn-primary btn-lg">Отправить</button>
 								</div>
 							</div>
 						</fieldset>
@@ -64,11 +65,19 @@
 			<div class="panel panel-default">
 				<div class="panel-body ">
 					<img src="images/its2.png" width="590" height="297" alt="I"></img>
-					</div>
-					</div>
+				</div>
+			</div>
 		</div>
 
 	</div>
+	
+	<?php
+		if(isset($_POST['send']))
+		{
+			$sql = "INSERT INTO requests (fio, phone, email, request_type) VALUES ('".$_POST["name"]."','".$_POST["phone"]."','".$_POST["email"]."', '0')";
+			mysqli_query($link, $sql);
+		}
+	?>
 
 	<!--
 	<div class="footer">
