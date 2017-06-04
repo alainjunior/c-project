@@ -108,14 +108,20 @@
 					type:'POST',
 					url:'ajax.php',
 					data:{
-						'name':$("#fname").val(),
+						'fio':$("#fname").val(),
 						'phone':$("#phone").val(),
 						'email':$("#email").val(),
+						'city':'',
+						'request_type':'0'
 					},
 					response:'text',
 					success:function (data) {
-						$('#myModal').modal('show');
-						$("#myForm").trigger('reset');
+						if(data != 'success'){
+							alert(data);
+						} else {
+							$('#myModal').modal('show');
+							$("#myForm").trigger('reset');
+						}
 					}
 				});
 			});
