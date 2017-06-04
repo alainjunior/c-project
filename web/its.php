@@ -1,5 +1,6 @@
 <?php
 	include 'base.php';
+	include 'db_connect.php';
 ?>
 
 <html>
@@ -67,67 +68,19 @@
 								<th>Описание</th>
 							</tr>
 						</thead>
-						<tr><td><center><img src="images/infsist.png" width="50" height="50" alt="I"></img></center></td>
-						<td><center>Информационная система 1С:ИТС</center></td>
-						<td>Самый полный информационный ресурс для людей, которые работают с программами «1С» - справочники,
-						методики, руководства, консультации по программам и законодательству.</td>
-						</tr>
 						
-						<tr><td><center><img src="images/otchet.png" width="50" height="50" alt="I"></img></center></td>
-						<td><center>1С:Отчетность</center></td>
-						<td>Быстрая и удобная подготовка и отправка регламентированной отчетности прямо из программ «1С», 
-						а также поддержка других видов электронного документооборота с контролирующими органами.</td>
-						</tr>
-						
-						<tr><td><center><img src="images/kontragent.png" width="50" height="50" alt="I"></img></center></td>
-						<td><center>1С:Контрагент</center></td>
-						<td>Быстрая проверка информации о контрагентах, автоматическое заполнение реквизитов контрагентов 
-						в различных документах и другие полезные функции</td>
-						</tr>
-						
-						<tr><td><center><img src="images/link.png" width="50" height="50" alt="I"></img></center></td>
-						<td><center>1С:Линк</center></td>
-						<td>Простой способ организовать безопасный удаленный доступ через Интернет к программам (информационным базам) 
-						1С:Предприятия, установленным на компьютере пользователя.</td>
-						</tr>
-						
-						<tr><td><center><img src="images/oblak.png" width="50" height="50" alt="I"></img></center></td>
-						<td><center>1С:Облачный архив</center></td>
-						<td>Резервное копирование информационных баз в облачное хранилище данных «1С», 
-						с возможностью быстрого восстановления информации в случае повреждения данных.</td></tr>
-						
-						<tr><td><center><img src="images/takskom.png" width="50" height="50" alt="I"></img></center></td>
-						<td><center>1С:Такском</center></td>
-						<td>Обмен счетами-фактурами и другими юридически значимыми документами с поставщиками, 
-						покупателями и прочими контрагентами в электронной форме прямо из программ «1С».</td>
-						</tr>
-						
-						<tr><td><center><img src="images/podpis.png" width="50" height="50" alt="I"></img></center></td>
-						<td><center>1С:Подпись</center></td>
-						<td>Удобный способ получить квалифицированный сертификат электронной подписи для обмена юридически значимыми электронными
-						документами прямо в программе 1С по доступной цене</td>
-						</tr>
-						
-						<tr><td><center><img src="images/takskom.png" width="50" height="50" alt="I"></img></center></td>
-						<td><center>1С:ЭДО</center></td>
-						<td>Обмен счетами-фактурами и другими юридически значимыми документами с поставщиками, покупателями и прочими контрагентами в электронной 
-						форме прямо из программ «1С» через одного или нескольких операторов электронного документооборота, поддерживающих технологию «1С-ЭДО». </td>
-						</tr>
-						
-						<tr><td><center><img src="images/1C-lekt.png" width="50" height="50" alt="I"></img></center></td>
-						<td><center>1С:Лекторий</center></td>
-						<td>Регулярные семинары по законодательству и его отражению в программах «1С» – в очной форме и в формате видеолекций. </td>
-						</tr>
-						
-						<tr><td><center><img src="images/linkons.png" width="50" height="50" alt="I"></img></center></td>
-						<td><center>Линия консультаций</center></td>
-						<td>Консультации специалистов Службы технической поддержки по «1С:Предприятию» и обслуживающего партнера по телефону и электронной почте. </td>
-						</tr>
-						
-						<tr><td><center><img src="images/auditor.png" width="50" height="50" alt="I"></img></center></td>
-						<td><center>Отвечает аудитор</center></td>
-						<td>Персональные письменные консультации от экспертов, аудиторов и методистов «1С» по вопросам бухгалтерского налогового и кадрового учета.</td>
-						</tr>
+						<?php
+							$sql = "SELECT id, icon, title, description FROM maintenance WHERE deleted='0'";
+							$result = $link->query($sql);
+
+							if ($result->num_rows > 0) {
+								while($row = $result->fetch_assoc()) {
+									echo "<tr id=".$row["id"]."><td><img src=".$row["icon"]." width=\"50\" height=\"50\"/></td><td>".$row["title"]."</td><td>".$row["description"]."</td></tr>";
+								}
+							} else {
+								echo "<tr><td class=\"text-center\" colspan=3>Нет сервисов</td></tr>";
+							}
+						?>
 					</table>
 				
 					<h2 class="text-center">Как сэкономить?</h2>

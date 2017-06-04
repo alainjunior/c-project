@@ -1,5 +1,6 @@
 <?php
 	include 'base.php';
+	include 'db_connect.php';
 ?>
 
 <html>
@@ -37,31 +38,19 @@
 								<th>Описание</th>
 							</tr>
 						</thead>
-						<tr>
-							<td><img src="images/kontragent.png" width="50" height="50" alt="I"></img></center></td>
-							<td><center>1С:Контрагент</center></td>
-							<td>Быстрая проверка информации о контрагентах, автоматическое заполнение реквизитов контрагентов 
-								в различных документах и другие полезные функции</td>
-						</tr>
-				
-				 
-						<tr><td><center><img src="images/ofd.png" width="50" height="50" alt="I"></img></center></td>
-						<td><center>1С:ОФД</center></td>
-						<td>Подключение к операторам фискальных данных (ОФД) в соответствии с законом 54-ФЗ, квалифицированная поддержка партнерами 1С 
-						при переходе на новый порядок применения контрольно-кассовой техники.</td>
-						</tr>
-				
-						<tr><td><center><img src="images/spark.png" width="50" height="50" alt="I"></img></center></td>
-						<td><center>1СПАРК Риски</center></td>
-						<td>Оценка надежности и мониторинг контрагентов в программах 1С для принятия 
-						взвешенных решений о сотрудничестве и минимизации налоговых рисков</td>
-						</tr>
-						 
-						<tr><td><center><img src="images/otchet.png" width="50" height="50" alt="I"></img></center></td>
-						<td><center>1С:Отчетность</center></td>
-						<td>Быстрая и удобная подготовка и отправка регламентированной отчетности прямо из программ «1С», 
-						а также поддержка других видов электронного документооборота с контролирующими органами.</td>
-						</tr>
+						
+						<?php
+							$sql = "SELECT id, icon, title, description FROM services WHERE deleted='0'";
+							$result = $link->query($sql);
+
+							if ($result->num_rows > 0) {
+								while($row = $result->fetch_assoc()) {
+									echo "<tr id=".$row["id"]."><td><img src=".$row["icon"]." width=\"50\" height=\"50\"/></td><td>".$row["title"]."</td><td>".$row["description"]."</td></tr>";
+								}
+							} else {
+								echo "<tr><td class=\"text-center\" colspan=3>Нет сервисов</td></tr>";
+							}
+						?>
 					</table>
 					<div class="col-md-12 text-center">
 						<a href="application.php?type=2"><button class="btn btn-primary btn-lg" style="float:center">Подключить</button></a>
