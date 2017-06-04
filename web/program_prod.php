@@ -38,67 +38,67 @@
 							</tr>
 						</thead>
 						<tr><td>1С:Бухгалтерия 8. Базовая версия</td>
-						<td><center>4800 руб.</center></td></tr>
+						<td>4800 руб.</td></tr>
 						 
 						<tr><td>1С:Зарплата и Управление Персоналом 8. Базовая версия</td>
-						<td><center>7400 руб.</center></td></tr>
+						<td>7400 руб.</td></tr>
 						 
 						<tr><td>1С:Розница 8. Базовая версия</td>
-						<td><center>3300 руб.</center></td></tr>
+						<td>3300 руб.</td></tr>
 
 						<tr><td>1С:Управление торговлей 8. Базовая версия</td>
-						<td><center>6700 руб.</center></td></tr>
+						<td>6700 руб.</td></tr>
 						
 						<tr><td>1С:Управление небольшой фирмой 8. Базовая версия</td>
-						<td><center>4600 руб.</center></td></tr>
+						<td>4600 руб.</td></tr>
 
 						<tr><td>1С:Бухгалтерия 8 ПРОФ</td>
-						<td><center>13000 руб.</center></td></tr>
+						<td>13000 руб.</td></tr>
 
 						<tr><td>1С:Бухгалтерия 8. Комплект на 5 пользователей</td>
-						<td><center>26000 руб.</center></td></tr>
+						<td>26000 руб.</td></tr>
 
 						<tr><td>1С:Зарплата и Управление Персоналом 8</td>
-						<td><center>22600 руб.</center></td></tr>
+						<td>22600 руб.</td></tr>
 
 						<tr><td>1С:Розница 8 ПРОФ</td>
-						<td><center>13000 руб.</center></td></tr>	
+						<td>13000 руб.</td></tr>	
 
 						<tr><td>1С:Предприятие 8. Управление торговлей</td>
-						<td><center>22600 руб.</center></td></tr>
+						<td>22600 руб.</td></tr>
 						
 						<tr><td>1С:Управление небольшой фирмой 8 ПРОФ</td>
-						<td><center>17400 руб.</center></td></tr>
+						<td>17400 руб.</td></tr>
 						
 						<tr><td>1С:Управление небольшой фирмой 8 на 5 пользователей</td>
-						<td><center>31800 руб.</center></td></tr>
+						<td>31800 руб.</td></tr>
 						
 						<tr><td>1С:Предприятие 8. Комплект прикладных решений на 5 пользователей</td>
-						<td><center>50400 руб.</center></td></tr>
+						<td>50400 руб.</td></tr>
 						
 						<tr><td>1С:Комплексная автоматизация 8</td>
-						<td><center>61700 руб.</center></td></tr>
+						<td>61700 руб.</td></tr>
 						
 						<tr><td>1С:Предприятие 8. Клиентская лицензия на одно рабочее место</td>
-						<td><center>6300 руб.</center></td></tr>
+						<td>6300 руб.</td></tr>
 						
 						<tr><td>1С:Предприятие 8. Клиентская лицензия на 5 рабочих мест</td>
-						<td><center>21600 руб.</center></td></tr>
+						<td>21600 руб.</td></tr>
 						
 						<tr><td>1С:Предприятие 8. Клиентская лицензия на 10 рабочих мест</td>
-						<td><center>41400 руб.</center></td></tr>
+						<td>41400 руб.</td></tr>
 						
 						<tr><td>1С:Предприятие 8. Клиентская лицензия на 20 рабочих мест</td>
-						<td><center>78000 руб.</center></td></tr>
+						<td>78000 руб.</td></tr>
 						
 						<tr><td>1С:Предприятие 8. Клиентская лицензия на 50 рабочих мест</td>
-						<td><center>187200 руб.</center></td></tr>
+						<td>187200 руб.</td></tr>
 						
 						<tr><td>1С:Предприятие 8.3 Лицензия на сервер </td>
-						<td><center>50400 руб.</center></td></tr>
+						<td>50400 руб.</td></tr>
 						
 						<tr><td>Стоимость часа обслуживания </td>
-						<td><center>1000 руб.</center></td></tr>
+						<td>1000 руб.</td></tr>
 					</table>
 					<div class="col-md-12 text-center">
 						<a href="zayavka_program_prod.html"><button class="btn btn-primary btn-lg" style="float:center">Оставить заявку</button></a>
@@ -107,38 +107,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-12 col-md-3 col-lg-3">
-			<div class="panel panel-default text-center">
-				<div class="panel-body">
-				<img src="images/1.png" width="75" height="75" alt="I"></img><br>
-				<p><b>Существенная экономия</b></p>
-				<p style="font-size:12px">Мы поможем выбрать оптимальный вариант для вас</p>
-				<br><br>
-				<img src="images/2.png" width="75" height="75" alt="I"></img><br>
-				<p><b>Полный комплекс услуг</b><p>
-				<p style="font-size:12px">Все сервисы<p>
-				<br><br>
-				<img src="images/3.png" width="75" height="75" alt="I"></img><br>
-				<p><b>Прозрачная система оплаты</b><p>
-				<p style="font-size:12px">Оплата по тарифам<p>
-				<br><br>
-				<img src="images/4.png" width="75" height="75" alt="I"></img><br>
-				<p><b>Гарантии качества</b><p>
-				<p style="font-size:12px">Несем полную материальную ответственность<p>
-				<br><br>
-				<img src="images/6.png" width="75" height="75" alt="I"></img><br>
-				<p><b>Высокая квалификация</b><p>
-				<p style="font-size:12px">Проходим сертификацию и в курсе изменений законодательства<p>
-				</div>
-		</div>
-	</div>
-
-	<div class="pro">
-			
-			
-			
-			</center>
-		</div>
+		
+		<?php
+			include 'advantages-panel.php';
+		?>
 		
 	</div>
 	<!--
