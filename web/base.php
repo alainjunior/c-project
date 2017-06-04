@@ -24,22 +24,30 @@
 			<a href="/"><img src="images/logo.jpg" width="95" height="50" alt="I"></a>
 
           <ul class="nav navbar-nav navbar-right">
-			<li><a href="/about.php">О нас</a></li>
 			<li class="dropdown">
 				<a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown">
+					О нас
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="/about.php">О компании</a></li>
+					<li><a href="/contacts.php">Контакты</a></li>
+					<li><a href="/otziv.php">Отзывы</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown">
 					Наши услуги
 					<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
+				</a>
+				<ul class="dropdown-menu">
 					<li><a href="/program_prod.php">Программные продукты</a></li>
 					<li><a href="/servis.php">Сервисы</a></li>
 					<li><a href="/its.php">Сопровождение</a></li>
 				</ul>
 			</li>
-			<li><a href="/otziv.php">Отзывы</a></li>
-			<li><a href="/contacts.php">Контакты</a></li>
 			<li><a href="/faq.php">Частые вопросы</a></li>
-			<li><a href="/konsult.php">Онлайн-консультация</a></li>
+			<li><a href="/konsult.php" style="color: green">Онлайн-консультация</a></li>
           </ul>
         </div>
       </div>

@@ -5,5 +5,5 @@
 	</a>
 </div>
 <script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script>
-<script charset="utf-8">new DGWidgetLoader({"width":600,"height":400,"borderColor":"#a3a3a3","pos":{"lat":53.337824213586856,"lon":83.78330469131471,"zoom":18},"opt":{"city":"barnaul"},"org":[{"id":"563478234404306"}]});</script>
+<script charset="utf-8">new DGWidgetLoader({"width":"100%","height":200,"borderColor":"#a3a3a3","pos":{"lat":53.337824213586856,"lon":83.78330469131471,"zoom":18},"opt":{"city":"barnaul"},"org":[{"id":"563478234404306"}]});</script>
 <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
