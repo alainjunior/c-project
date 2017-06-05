@@ -80,16 +80,9 @@
 	
 
 
-	<!--
-	<div class="footer">
-		<div class="foot">
-			© ООО «ПРОКС»<br>
-			656043, г. Барнаул, ул. Пролетарская, д.90
-			<br><br>
-			+7 (3852) 229-444. 
-		</div>
-	</div>
-	-->
+<?php
+	include 'footer.php';
+?>
 	<script type="text/javascript">
 		$(document).ready(function () {
 			$('#myForm').on('submit', function(e) {

@@ -1,10 +1,40 @@
 
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+	background-color: #f9f9f9;
+}
+.navbar-inverse .navbar-nav>li>a.link{
+	color:#000;
+}
+.navbar-inverse .navbar-nav>li>a.link:hover{
+	color:#fff;
+}
+.navbar-inverse .navbar-nav>li>a.green-link{
+	color:#080;
+}
+.navbar-inverse .navbar-nav>li>a.green-link:hover{
+	color:#fff;
+}
+.footer{
+	background-color: #FEDD42 !important;
+	border-top: solid 1px;
+    width: 100%;
+    height: 60px;
+	position: absolute;
+	bottom: 0;
+	margin-bottom:-60px;
+	text-align: center;
+}
 
 
-
-
-
+.navbar{
+	background-color: #FEDD42 !important;
+}
 
 
 .contact-icon{

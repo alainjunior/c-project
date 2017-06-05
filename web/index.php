@@ -7,8 +7,6 @@
 <head>
 <title>ООО «ПРОКС»</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
-	<link rel="stylesheet" href="custom.css" media="screen">
-	<link rel="stylesheet" href="bootstrap.min.css" media="screen">
 	
 </head>
 
@@ -85,7 +83,9 @@
 		
 		?>
 	</div>
-
+<?php
+	include 'footer.php';
+?>
 	<!-- футера временно нет -->
 
 </body>
