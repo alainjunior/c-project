@@ -16,9 +16,6 @@
 		<div class="col-sm-12 col-md-6 col-lg-6">
 			<div class="panel panel-default">
 				<div class="panel-body ">
-				<!-- добавить стили для вопросов -->
-				<!-- вопросы берутся с БД?? -->
-					
 					<form class="form-horizontal" id="myForm" method="post">
 						<fieldset>
 							<legend class="text-center" style="font-size:24px">Пожалуйста, заполните форму <br /> Специалист свяжется с Вами в ближайшее время</legend>
