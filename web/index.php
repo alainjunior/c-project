@@ -6,9 +6,9 @@
 
 <html>
 <head>
-<title>ООО «ПРОКС»</title>
+
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
-	
+	<title>ПРОКС / Барнаул</title>
 </head>
 
 <body>

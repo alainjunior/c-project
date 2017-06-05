@@ -3,7 +3,7 @@
 ?>
 <html>
 <head>
-<title>ООО «ПРОКС»</title>
+<title>ПРОКС / Барнаул - Контакты</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
 	<link rel="stylesheet" href="custom.css" media="screen">
 	

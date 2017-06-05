@@ -6,7 +6,7 @@
 
 <html>
 <head>
-<title>ООО «ПРОКС»</title>
+<title>ПРОКС / Барнаул - Программные продукты</title>
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
 	<link rel="stylesheet" href="style.css" media="screen">
 

@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-    <title></title>
 	
 	<link href="bootstrap.min.css" rel="stylesheet"/>
 	<link href="footer.css" rel="stylesheet"/>
