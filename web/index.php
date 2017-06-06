@@ -12,7 +12,6 @@
 </head>
 
 <body>
-<?php echo $_SESSION['login']; ?>
 	<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin-top:50px">
 	  <!-- Indicators -->
 	  <ol class="carousel-indicators">
