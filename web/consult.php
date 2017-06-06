@@ -92,7 +92,7 @@
 						'phone':$("#phone").val(),
 						'email':$("#email").val(),
 						'city':'',
-						'request_type':'0'
+						'request_type':'1'
 					},
 					response:'text',
 					success:function (data) {

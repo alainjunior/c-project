@@ -28,7 +28,7 @@
 			</thead>
 			
 			<?php
-				$sql = "SELECT r.id, fio, phone, email, city, date, name FROM requests r join request_type rt on r.request_type=rt.id where checked='0' LIMIT 25";
+				$sql = "SELECT r.id, fio, phone, email, city, date, name FROM requests r join request_type rt on r.request_type=rt.id where checked='0' ORDER BY date DESC LIMIT 25";
 				$result = $link->query($sql);
 
 				if ($result->num_rows > 0) {

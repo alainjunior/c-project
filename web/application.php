@@ -18,11 +18,11 @@
 				<div class="panel-body ">
 					<form id="myForm" class="form-horizontal" method="post">
 						<fieldset>
-							<?php if($_GET['type'] == 1): ?>
+							<?php if($_GET['type'] == 2): ?>
 								<legend class="text-center" style="font-size:24px">Оставить заявку на консультацию по приобретению программного продукта</legend>
-							<?php elseif($_GET['type'] == 2): ?>
-								<legend class="text-center" style="font-size:24px">Оставить заявку на консультацию по сервисам</legend>
 							<?php elseif($_GET['type'] == 3): ?>
+								<legend class="text-center" style="font-size:24px">Оставить заявку на консультацию по сервисам</legend>
+							<?php elseif($_GET['type'] == 4): ?>
 								<legend class="text-center" style="font-size:24px">Подключить тариф "Сопровождение"</legend>
 							<?php endif ?>
 							<div class="form-group">
@@ -64,7 +64,7 @@
 		<div class="col-sm-12 col-md-6 col-lg-6" style="text-align: center;">
 			<div class="panel panel-default" style="min-height: 375px;">
 				<div class="panel-body ">
-					<?php if($_GET['type'] == 1): ?>
+					<?php if($_GET['type'] == 2): ?>
 						<img src="images/prod1.png" width="590" height="297" alt="I"></img>
 					<?php else: ?>
 						<img src="images/its2.png" width="590" height="297" alt="I"></img>
@@ -83,11 +83,11 @@
 					<h4 class="modal-title">Информация</h4>
 				</div>
 				<div class="modal-body text-center">
-					<?php if($_GET['type'] == 1): ?>
+					<?php if($_GET['type'] == 2): ?>
 						<p>Заявка на консультацию по приобретению программного продукта успешно отправлена</p>
-					<?php elseif($_GET['type'] == 2): ?>
-						<p>Заявка на консультацию по сервисам успешно отправлена</p>
 					<?php elseif($_GET['type'] == 3): ?>
+						<p>Заявка на консультацию по сервисам успешно отправлена</p>
+					<?php elseif($_GET['type'] == 4): ?>
 						<p>Заявка на подключение тарифа "Сопровождение" успешно отправлена</p>
 					<?php endif ?>
 				</div>

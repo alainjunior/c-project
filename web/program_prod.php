@@ -41,7 +41,7 @@
 						?>
 					</table>
 					<div class="col-md-12 text-center">
-						<a href="application.php?type=1"><button class="btn btn-primary btn-lg" style="float:center">Оставить заявку</button></a>
+						<a href="application.php?type=2"><button class="btn btn-primary btn-lg" style="float:center">Оставить заявку</button></a>
 					</div>
 					
 				</div>
