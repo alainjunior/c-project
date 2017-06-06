@@ -1,5 +1,7 @@
-﻿<?php
+<?php
 	include 'baseAdmin.php';
+	include 'db_connect.php';
+	session_start();
 ?>
 <html>
 <head>
