@@ -19,7 +19,7 @@
 				<tr>
 					<th>Заголовок</th>
 					<th>Дата</th>
-					<th>Действия</th>
+					<th style="width:260px">Действия</th>
 				</tr>
 			</thead>
 			
@@ -31,11 +31,11 @@
 					while($row = $result->fetch_assoc()) {
 						echo "<tr><td>".$row["title"]."</td><td>".$row["date"]."</td>";
 						if($row["published"] == '0'){
-							echo "<td><a class=\"btn btn-primary\" onclick=\"news_publish('".$row["id"]."', '1')\">Опубликовать</a>";
+							echo "<td><a class=\"btn btn-primary\" onclick=\"news_publish('".$row["id"]."', '1')\"><span class=\"glyphicon glyphicon-arrow-up\" aria-hidden=\"true\"></span> Опубликовать</a>";
 						} else {
-							echo "<td><a class=\"btn btn-primary\" onclick=\"news_publish('".$row["id"]."', '0')\">Снять с публикации</a>";
+							echo "<td><a class=\"btn btn-primary\" onclick=\"news_publish('".$row["id"]."', '0')\"><span class=\"glyphicon glyphicon-arrow-down\" aria-hidden=\"true\"></span> Снять с публикации</a>";
 						}
-						echo "<a class=\"btn btn-danger\" style=\"margin-left:5px\" onclick=\"news_delete_confirm('".$row["id"]."')\">Удалить</a></td></tr>";
+						echo "<a class=\"btn btn-danger\" style=\"margin-left:5px\" onclick=\"news_delete_confirm('".$row["id"]."')\"><span class=\"glyphicon glyphicon-remove\" aria-hidden=\"true\"></span> Удалить</a></td></tr>";
 					}
 				} else {
 					echo "<tr><td class=\"text-center\" colspan=3>Нет новостей</td></tr>";
