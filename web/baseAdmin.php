@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="custom.css" media="screen">
 	<script src="jquery-3.2.1.min.js"></script>
 	<script src="bootstrap.js"></script>
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
 	
 	
 	<nav class="navbar navbar-inverse  navbar-fixed-top navbar-right">

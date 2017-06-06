@@ -34,7 +34,7 @@
 				if ($result->num_rows > 0) {
 					while($row = $result->fetch_assoc()) {
 						echo "<tr><td>".$row["fio"]."</td><td>".$row["phone"]."</td><td>".$row["email"]."</td>
-						<td>".$row["city"]."</td><td>".$row["date"]."</td><td>".$row["name"]."</td><td><button onclick=\"check_request(".$row["id"].")\">CHECK</button></td></tr>";
+						<td>".$row["city"]."</td><td>".$row["date"]."</td><td>".$row["name"]."</td><td><a class=\"btn fa fa-2x fa-check-square-o\" onclick=\"check_request(".$row["id"].")\"></a></td></tr>";
 					}
 				} else {
 					echo "<tr><td class=\"text-center\" colspan=7>Нет заявок</td></tr>";
@@ -51,8 +51,7 @@
 						'id':id
 					},
 					success:function (data) {
-
-					
+						
 					}
 				});
 			
