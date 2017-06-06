@@ -11,7 +11,6 @@
 <meta charset="utf-8">
 	
 	<link href="bootstrap.min.css" rel="stylesheet"/>
-	<link href="footer.css" rel="stylesheet"/>
 	<link rel="stylesheet" href="custom.css" media="screen">
 	<script src="jquery-3.2.1.min.js"></script>
 	<script src="bootstrap.js"></script>
