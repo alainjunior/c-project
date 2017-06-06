@@ -34,7 +34,7 @@ if (isset($data['submit'])) {
             $_SESSION['login'] = $login;
             $_SESSION['id'] = $row_id['id'];
             ?>
-            <meta http-equiv="refresh" content="0; url=adminPanel.php">
+            <meta http-equiv="refresh" content="0; url=news_edit.php">
             <?php
         } else {
             $info = '<div style="color: red"><hr>'
