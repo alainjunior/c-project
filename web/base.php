@@ -47,6 +47,7 @@
 					<li><a href="/program_prod.php">Программные продукты</a></li>
 					<li><a href="/service.php">Сервисы</a></li>
 					<li><a href="/its.php">Сопровождение</a></li>
+					<li><a href="/calc.php">Калькулятор тарифов</a></li>
 				</ul>
 			</li>
 			<li><a href="/faq.php" class="link">Частые вопросы</a></li>
