@@ -8,7 +8,7 @@
 
 				if ($result->num_rows > 0) {
 					while($row = $result->fetch_assoc()) {
-						echo "<hr size=\"0.01\" width=\"100%\">".date_create_from_format('Y-m-d H:i:s', $row["date"])->format('Y-m-d')."<br><a href=\"#\">".$row["title"]."</a>";
+						echo "<hr size=\"0.01\" width=\"100%\">".date_create_from_format('Y-m-d H:i:s', $row["date"])->format('Y-m-d')."<br><a href=\"news_show.php?id=".$row["id"]."\">".$row["title"]."</a>";
 					}
 				} else {
 					echo "Нет новостей";
