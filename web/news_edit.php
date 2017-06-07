@@ -19,7 +19,7 @@
 				<tr>
 					<th>Заголовок</th>
 					<th>Дата</th>
-					<th style="width:260px">Действия</th>
+					<th style="width:350px">Действия</th>
 				</tr>
 			</thead>
 			
